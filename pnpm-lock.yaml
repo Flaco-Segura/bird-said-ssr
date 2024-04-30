@@ -6,7 +6,10 @@ importers:
     specifiers:
       eslint-config-custom: workspace:*
       prettier: latest
+      react-icons: ^5.1.0
       turbo: latest
+    dependencies:
+      react-icons: 5.1.0
     devDependencies:
       eslint-config-custom: link:packages/eslint-config-custom
       prettier: 3.2.5
@@ -2295,6 +2298,12 @@ packages:
 
   /react-fast-compare/3.2.2:
     resolution: {integrity: sha512-nsO+KSNgo1SbJqJEYRE9ERzo7YtYbou/OqjSQKxV7jcKox7+usiUVZOAC+XnDOABXggQTno0Y1CpVnuWEc1boQ==}
+    dev: false
+
+  /react-icons/5.1.0:
+    resolution: {integrity: sha512-D3zug1270S4hbSlIRJ0CUS97QE1yNNKDjzQe3HqY0aefp2CBn9VgzgES27sRR2gOvFK+0CNx/BW0ggOESp6fqQ==}
+    peerDependencies:
+      react: '*'
     dev: false
 
   /react-is/16.13.1:
