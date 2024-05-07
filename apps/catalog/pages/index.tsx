@@ -1,10 +1,15 @@
-import { Button } from "ui";
+import { Card } from "semantic-ui-react";
+import ProductCard from "../components/ProductCard";
+import { PRODUCT_LIST_MOCKS } from "../mocks/product-list-mocks";
 
-export default function Web() {
-  return (
-    <div>
-      <h1>Web</h1>
-      <Button />
-    </div>
+export const ProductList = () => {
+  return(
+    <Card.Group>
+      {PRODUCT_LIST_MOCKS.map( (product) => (
+        <ProductCard key={product.id} product={product} />
+      ))}
+    </Card.Group>
   );
 }
+
+export default ProductList
